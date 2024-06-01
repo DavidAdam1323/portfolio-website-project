@@ -32,10 +32,9 @@ function Hero() {
         />
       </div>
       <div className={styles.info}>
-        <h1>
-          David <br /> Adam <br /> Silva
-        </h1>
-        <h2>Front-End Developer</h2>
+        <h3>Hello I'm</h3>
+        <h1>David Adam Silva</h1>
+        <h2>Software Developer</h2>
         <span>
           <a href="https://www.linkedin.com/in/davidadamsilva/">
             <img src={linkedInIcon} alt="LinkedIn Icon" />
@@ -44,15 +43,20 @@ function Hero() {
             <img src={gitHubIcon} alt="GitHub Icon" />
           </a>
         </span>
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero
           dolore natus deserunt voluptatibus. Similique odio deleniti,
           perspiciatis modi, earum sint consequuntur dignissimos error, impedit
           qui nam labore dolorem suscipit.
-        </p>
-        <a href={CV} download>
-          <button className="hover">Download CV</button>
-        </a>
+        </p> */}
+        <div className={styles.btnSection}>
+          <a href={CV} download>
+            <button className="CV-btn">Download CV</button>
+          </a>
+          <a href="#contact">
+            <button className="Contact-btn">Contact Info</button>
+          </a>
+        </div>
       </div>
     </section>
   );
