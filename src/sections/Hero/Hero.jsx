@@ -2,19 +2,19 @@ import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-img.png";
 import sun from "../../assets/sun-icon.png";
 import moon from "../../assets/moon-icon.png";
-import linkedInLight from "../../assets/linkedin-icon.png";
-import linkedInDark from "../../assets/linkedin-icon.png";
-import gitHubLight from "../../assets/github-icon.png";
-import gitHubDark from "../../assets/github-icon.png";
+import linkedinLight from "../../assets/linkedin-iconWhite.png";
+import linkedinDark from "../../assets/linkedin-iconDark.png";
+import githubLight from "../../assets/github-iconWhite.png";
+import githubDark from "../../assets/github-iconDark.png";
 import CV from "../../assets/DavidAdam_CV.pdf";
-import { useTheme } from "../../common/ThemeContex";
+import { useTheme } from "../../common/ThemeContext.jsx";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === "light" ? sun : moon;
-  const linkedInIcon = theme === "light" ? linkedInLight : linkedInDark;
-  const gitHubIcon = theme === "light" ? gitHubLight : gitHubDark;
+  const themeIcon = theme === "light" ? moon : sun;
+  const linkedInIcon = theme === "light" ? linkedinLight : linkedinDark;
+  const gitHubIcon = theme === "light" ? githubLight : githubDark;
 
   return (
     <section id="hero" className={styles.container}>
