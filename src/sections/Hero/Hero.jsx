@@ -12,9 +12,9 @@ import { useTheme } from "../../common/ThemeContext.jsx";
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === "light" ? moon : sun;
-  const linkedInIcon = theme === "light" ? linkedinLight : linkedinDark;
-  const gitHubIcon = theme === "light" ? githubLight : githubDark;
+  const themeIcon = theme === "dark" ? moon : sun;
+  const linkedInIcon = theme === "dark" ? linkedinLight : linkedinDark;
+  const gitHubIcon = theme === "dark" ? githubLight : githubDark;
 
   return (
     <section id="hero" className={styles.container}>
