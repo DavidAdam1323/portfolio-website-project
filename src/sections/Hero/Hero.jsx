@@ -44,7 +44,7 @@ function Hero() {
             <img src={gitHubIcon} alt="GitHub Icon" />
           </a>
         </span>
-        <p>
+        <p className={styles.description}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero
           dolore natus deserunt voluptatibus. Similique odio deleniti,
           perspiciatis modi, earum sint consequuntur dignissimos error, impedit
