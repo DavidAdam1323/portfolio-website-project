@@ -35,14 +35,6 @@ function Hero() {
         <h3>Hello I'm</h3>
         <h1>David Adam Silva</h1>
         <h2>Software Developer</h2>
-        <span>
-          <a href="https://www.linkedin.com/in/davidadamsilva/">
-            <img src={linkedInIcon} alt="LinkedIn Icon" />
-          </a>
-          <a href="https://github.com/DavidAdam1323">
-            <img src={gitHubIcon} alt="GitHub Icon" />
-          </a>
-        </span>
         {/* <p className={styles.description}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero
           dolore natus deserunt voluptatibus. Similique odio deleniti,
@@ -57,6 +49,14 @@ function Hero() {
             <button className="Contact-btn">Contact Info</button>
           </a>
         </div>
+        <span>
+          <a href="https://www.linkedin.com/in/davidadamsilva/">
+            <img src={linkedInIcon} alt="LinkedIn Icon" />
+          </a>
+          <a href="https://github.com/DavidAdam1323">
+            <img src={gitHubIcon} alt="GitHub Icon" />
+          </a>
+        </span>
       </div>
     </section>
   );
