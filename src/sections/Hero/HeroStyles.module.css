@@ -66,11 +66,6 @@
   cursor: pointer;
 }
 
-/* .description {
-  max-width: 24ch;
-  align-self: center;
-} */
-
 .info {
   display: flex;
   flex-direction: column;
@@ -79,5 +74,7 @@
 
 .btnSection {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }

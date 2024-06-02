@@ -35,12 +35,6 @@ function Hero() {
         <h3>Hello I'm</h3>
         <h1>David Adam Silva</h1>
         <h2>Software Developer</h2>
-        {/* <p className={styles.description}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero
-          dolore natus deserunt voluptatibus. Similique odio deleniti,
-          perspiciatis modi, earum sint consequuntur dignissimos error, impedit
-          qui nam labore dolorem suscipit.
-        </p> */}
         <div className={styles.btnSection}>
           <a href={CV} download>
             <button className="CV-btn">Download CV</button>
