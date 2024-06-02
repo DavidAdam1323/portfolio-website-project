@@ -10,7 +10,7 @@ function Projects() {
           href="https://github.com/DavidAdam1323/pokemon-cardGenerator-project"
           target="_blank"
         >
-          <img className={styles.card} src={pokeCard} alt="Pokemon Card" />
+          <img className="hover" src={pokeCard} alt="Pokemon Card" />
           <h3>PokeCard Generator</h3>
           <p>Pokemon World App</p>
         </a>
