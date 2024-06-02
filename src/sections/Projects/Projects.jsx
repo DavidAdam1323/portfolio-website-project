@@ -6,7 +6,10 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-        <a href="https://github.com/DavidAdam1323/pokemon-cardGenerator-project">
+        <a
+          href="https://github.com/DavidAdam1323/pokemon-cardGenerator-project"
+          target="_blank"
+        >
           <img className={styles.card} src={pokeCard} alt="Pokemon Card" />
           <h3>PokeCard Generator</h3>
           <p>Pokemon World App</p>
