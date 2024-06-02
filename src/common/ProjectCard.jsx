@@ -4,7 +4,7 @@ function ProjectCard({ src }) {
   return (
     <>
       <div>
-        <img className="hover" src={src} alt="PokeCard Project Image" />
+        <img className="hover" src={src} alt="Project Image" />
       </div>
     </>
   );
