@@ -1,6 +1,7 @@
 import styles from "./ProjectsStyles.module.css";
 import pokeCard from "../../assets/pokeCard.png";
 import toDoList from "../../assets/toDoList.png";
+import calculator from "../../assets/calculator.png";
 import ProjectCard from "../../common/ProjectCard.jsx";
 
 function Projects() {
@@ -12,7 +13,7 @@ function Projects() {
         <div className={styles.projectsContainer}>
           <ProjectCard src={pokeCard} />
         </div>
-        <h3>Pokecard Generator</h3>
+        <h3>Calc Clone</h3>
         <div className={styles.btnCardSection}>
           <a
             href="https://github.com/DavidAdam1323/pokemon-cardGenerator-project"
@@ -42,6 +43,26 @@ function Projects() {
           </a>
           <a
             href="https://davidadam1323.github.io/toDoList-project/"
+            target="_blank"
+          >
+            <button className={styles.cardBtn}>Live Demo</button>
+          </a>
+        </div>
+      </div>
+      <div className={styles.projectCard}>
+        <div className={styles.projectsContainer}>
+          <ProjectCard src={calculator} />
+        </div>
+        <h3>Clone Calculator</h3>
+        <div className={styles.btnCardSection}>
+          <a
+            href="https://github.com/DavidAdam1323/calculator-project"
+            target="_blank"
+          >
+            <button className={styles.cardBtn}>GitHub</button>
+          </a>
+          <a
+            href="https://davidadam1323.github.io/calculator-project/"
             target="_blank"
           >
             <button className={styles.cardBtn}>Live Demo</button>
