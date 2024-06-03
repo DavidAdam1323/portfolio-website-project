@@ -39,6 +39,7 @@
     height: 50px;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
   }
@@ -83,7 +84,7 @@
   .container {
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 75px;
 
     .hero {
