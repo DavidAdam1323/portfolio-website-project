@@ -1,4 +1,5 @@
 import styles from "./ProjectsStyles.module.css";
+import DPP from "../../assets/DPP.png";
 import pokeCard from "../../assets/pokeCard.png";
 import toDoList from "../../assets/toDoList.png";
 import calculator from "../../assets/calculator.png";
@@ -11,20 +12,17 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectCard}>
         <div className={styles.projectsContainer}>
-          <ProjectCard src={pokeCard} />
+          <ProjectCard src={DPP} />
         </div>
-        <h3>Calc Clone</h3>
+        <h3>Relable DPPs</h3>
         <div className={styles.btnCardSection}>
           <a
-            href="https://github.com/DavidAdam1323/pokemon-cardGenerator-project"
+            href="https://github.com/DavidAdam1323/eslando-SoCfinal-project"
             target="_blank"
           >
             <button className={styles.cardBtn}>GitHub</button>
           </a>
-          <a
-            href="https://davidadam1323.github.io/pokemon-cardGenerator-project/"
-            target="_blank"
-          >
+          <a href="https://eslando.vercel.app/?product=3" target="_blank">
             <button className={styles.cardBtn}>Live Demo</button>
           </a>
         </div>
@@ -43,6 +41,26 @@ function Projects() {
           </a>
           <a
             href="https://davidadam1323.github.io/toDoList-project/"
+            target="_blank"
+          >
+            <button className={styles.cardBtn}>Live Demo</button>
+          </a>
+        </div>
+      </div>
+      <div className={styles.projectCard}>
+        <div className={styles.projectsContainer}>
+          <ProjectCard src={pokeCard} />
+        </div>
+        <h3>Pokecard Generator</h3>
+        <div className={styles.btnCardSection}>
+          <a
+            href="https://github.com/DavidAdam1323/pokemon-cardGenerator-project"
+            target="_blank"
+          >
+            <button className={styles.cardBtn}>GitHub</button>
+          </a>
+          <a
+            href="https://davidadam1323.github.io/pokemon-cardGenerator-project/"
             target="_blank"
           >
             <button className={styles.cardBtn}>Live Demo</button>
