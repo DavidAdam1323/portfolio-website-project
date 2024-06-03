@@ -34,7 +34,27 @@
     border-radius: 20px;
   }
 
-  .frontEndList {
-    margin-bottom: 30px;
+  .containerList {
+    margin: 30px;
+  }
+}
+
+@media (width >= 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .skillsList {
+      max-width: 900px;
+    }
+
+    .techList {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
 }
