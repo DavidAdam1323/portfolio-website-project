@@ -37,15 +37,19 @@ function About() {
       </div>
       <div className={styles.cardSection}>
         <div className={styles.cardAbout}>
-          <img src={experienceIcon} alt="Experience Icon" />
-          <h3 className={styles.aboutTitle}>Experience</h3>
+          <div className={styles.cardTitleCERT}>
+            <img src={experienceIcon} alt="Experience Icon" />
+            <h3 className={styles.aboutTitle}>Experience</h3>
+          </div>
           <article className={styles.text}>
             16+ Weeks Full-Stack Web Development
           </article>
         </div>
         <div className={styles.cardAbout}>
-          <img src={educationIcon} alt="Education Icon" />
-          <h3 className={styles.aboutTitle}>Education</h3>
+          <div className={styles.cardTitleCERT}>
+            <img src={educationIcon} alt="Education Icon" />
+            <h3 className={styles.aboutTitle}>Education</h3>
+          </div>
           <article className={styles.text}>
             Secondary Education - Brazil <br />
             General Certificate - (GCSE) Equivalent

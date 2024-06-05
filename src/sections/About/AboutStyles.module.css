@@ -4,6 +4,7 @@
   align-items: center;
 
   .subTitle {
+    margin-bottom: 15px;
     font-weight: 100;
   }
 
@@ -25,10 +26,6 @@
     border: rgb(163, 163, 163) 0.1rem solid;
   }
 
-  .aboutTitle {
-    margin-bottom: 10px;
-  }
-
   article {
     font-family: "Inter", sans-serif;
     font-size: 14.5px;
@@ -45,6 +42,18 @@
     margin-block-start: 1em;
     margin-block-end: 1em;
     text-align: justify;
+  }
+
+  .cardTitleCERT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .aboutTitle {
+    font-size: 18px;
   }
 
   img {
