@@ -5,6 +5,20 @@ function About() {
     <section id="about" className={styles.container}>
       <h3 className={styles.subTitle}>Get To Know More</h3>
       <h1>About Me</h1>
+      <div className={styles.aboutDetails}>
+        <p>
+          I'm David Adam Silva, originally from Brazil and now based in the UK.
+          After two decades as a guitarist, I've transitioned to full-stack
+          JavaScript web development. As a School of Code graduate, I'm skilled
+          in JavaScript, Node.js, and React.
+        </p>{" "}
+        <p>
+          I thrive on creativity and problem-solving, and enjoy playing guitar,
+          reading self-development books, riding motorcycles, and creating art.
+          Inspired by Stoicism, I'm always striving for personal growth. Let's
+          connect and build something amazing together!
+        </p>
+      </div>
       <div className={styles.cardSection}>
         <div className={styles.cardAbout}>
           <h3 className={styles.aboutTitle}>Experience</h3>
@@ -19,20 +33,6 @@ function About() {
             General Certificate - (GCSE) Equivalent
           </article>
         </div>
-      </div>
-      <div className={styles.aboutDetails}>
-        <p>
-          I'm David Adam Silva, originally from Brazil and now based in the UK.
-          After two decades as a guitarist, I've transitioned to full-stack
-          JavaScript web development. As a School of Code graduate, I'm skilled
-          in JavaScript, Node.js, and React.
-        </p>{" "}
-        <p>
-          I thrive on creativity and problem-solving, and enjoy playing guitar,
-          reading self-development books, riding motorcycles, and creating art.
-          Inspired by Stoicism, I'm always striving for personal growth. Let's
-          connect and build something amazing together!
-        </p>
       </div>
     </section>
   );
