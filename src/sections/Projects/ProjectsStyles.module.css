@@ -35,6 +35,7 @@
     display: flex;
     justify-content: space-around;
     margin: 0 20px 30px 20px;
+    gap: 20px;
   }
 
   .cardBtn {
@@ -61,10 +62,16 @@
   }
 }
 
-.projectCard {
-  border: 1px solid rgb(163, 163, 163);
-  border-radius: 20px;
-  margin-bottom: 30px;
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .projectCard {
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .image {
