@@ -6,18 +6,22 @@ function About() {
       <h3 className={styles.subTitle}>Get To Know More</h3>
       <h1>About Me</h1>
       <div className={styles.aboutDetails}>
+        <p>Hi there, I’m David Adam!</p>
         <p>
-          I'm David Adam Silva, originally from Brazil and now based in the UK.
-          After two decades as a guitarist, I've transitioned to full-stack
-          JavaScript web development. As a School of Code graduate, I'm skilled
-          in JavaScript, Node.js, and React.
-        </p>{" "}
-        <p>
-          I thrive on creativity and problem-solving, and enjoy playing guitar,
-          reading self-development books, riding motorcycles, and creating art.
-          Inspired by Stoicism, I'm always striving for personal growth. Let's
-          connect and build something amazing together!
+          My journey started as a passionate guitarist, spending 21 years
+          performing, tutoring, and collaborating with bands and solo artists.
+          Like many, the pandemic pushed me to explore new horizons, and that's
+          when I discovered my love for software engineering.
         </p>
+        <p>
+          Shifting from the stage to the screen, I’ve found immense joy in
+          coding and problem-solving. My musical background has given me a
+          unique take on creativity and collaboration, which I now apply to my
+          work as a software engineer. I’m dedicated to building a strong career
+          in this dynamic field and continuously improving my skills to deliver
+          impactful and innovative solutions.
+        </p>
+        <p>Let’s connect and create something amazing together!</p>
       </div>
       <div className={styles.cardSection}>
         <div className={styles.cardAbout}>
