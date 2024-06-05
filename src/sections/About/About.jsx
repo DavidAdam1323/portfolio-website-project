@@ -1,6 +1,18 @@
 import styles from "./AboutStyles.module.css";
+import experienceIconWhite from "../../assets/exp-iconWhite.png";
+import experienceIconDark from "../../assets/exp-iconDark.png";
+import educationIconWhite from "../../assets/education-iconWhite.png";
+import educationIconDark from "../../assets/education-iconDark.png";
+import { useTheme } from "../../common/ThemeContext.jsx";
 
 function About() {
+  const { theme } = useTheme();
+
+  const experienceIcon =
+    theme === "light" ? experienceIconDark : experienceIconWhite;
+  const educationIcon =
+    theme === "light" ? educationIconDark : educationIconWhite;
+
   return (
     <section id="about" className={styles.container}>
       <h3 className={styles.subTitle}>Get To Know More</h3>
@@ -25,12 +37,14 @@ function About() {
       </div>
       <div className={styles.cardSection}>
         <div className={styles.cardAbout}>
+          <img src={experienceIcon} alt="Experience Icon" />
           <h3 className={styles.aboutTitle}>Experience</h3>
           <article className={styles.text}>
             16+ Weeks Full-Stack Web Development
           </article>
         </div>
         <div className={styles.cardAbout}>
+          <img src={educationIcon} alt="Education Icon" />
           <h3 className={styles.aboutTitle}>Education</h3>
           <article className={styles.text}>
             Secondary Education - Brazil <br />

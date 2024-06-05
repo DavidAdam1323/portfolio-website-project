@@ -46,4 +46,8 @@
     margin-block-end: 1em;
     text-align: justify;
   }
+
+  img {
+    width: 20px;
+  }
 }
