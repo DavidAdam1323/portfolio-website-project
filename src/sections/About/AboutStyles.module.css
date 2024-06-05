@@ -28,11 +28,12 @@
 
   .aboutTitle {
     margin-bottom: 10px;
+  }
 
-    .text {
-      margin: 0;
-      text-align: center;
-    }
+  article {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    text-align: center;
   }
 
   .aboutDetails {

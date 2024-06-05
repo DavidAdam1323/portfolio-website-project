@@ -8,14 +8,16 @@ function About() {
       <div className={styles.cardSection}>
         <div className={styles.cardAbout}>
           <h3 className={styles.aboutTitle}>Experience</h3>
-          <p className={styles.text}>16+ Weeks Full-Stack Web Development</p>
+          <article className={styles.text}>
+            16+ Weeks Full-Stack Web Development
+          </article>
         </div>
         <div className={styles.cardAbout}>
           <h3 className={styles.aboutTitle}>Education</h3>
-          <p className={styles.text}>
+          <article className={styles.text}>
             Secondary Education - Brazil <br />
             General Certificate - (GCSE) Equivalent
-          </p>
+          </article>
         </div>
       </div>
       <div className={styles.aboutDetails}>
