@@ -42,7 +42,7 @@ function About() {
             <h3 className={styles.aboutTitle}>Experience</h3>
           </div>
           <article className={styles.text}>
-            16+ Weeks Full-Stack Web Development
+            16+ Weeks Full-Stack Web Development <br /> Shool of Code Bootcamp
           </article>
         </div>
         <div className={styles.cardAbout}>
