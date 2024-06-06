@@ -2,75 +2,73 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
 
-  .subTitle {
-    font-weight: 100;
-    margin-bottom: 10px;
-  }
+.subTitle {
+  font-weight: 100;
+  margin-bottom: 10px;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
-  textarea,
-  input:not([type="submit"]) {
-    height: 50px;
-    padding-left: 16px;
-    width: 300px;
-  }
+textarea,
+input:not([type="submit"]) {
+  height: 50px;
+  padding-left: 16px;
+  width: 300px;
+}
 
-  textarea {
-    padding-top: 16px;
-    resize: none;
-    height: 250px;
-  }
+textarea {
+  padding-top: 16px;
+  resize: none;
+  height: 250px;
+}
 
-  input,
-  textarea {
-    border-radius: 20px;
-    border: #888 1px solid;
-    box-sizing: border-box;
-    justify-self: center;
-    background-color: var(--background-color);
-    color: var(--form-text-color);
-  }
+input,
+textarea {
+  border-radius: 20px;
+  border: #888 1px solid;
+  box-sizing: border-box;
+  justify-self: center;
+  background-color: var(--background-color);
+  color: var(--form-text-color);
+}
 
-  ::placeholder {
-    color: var(--form-text-color);
-  }
+::placeholder {
+  color: var(--form-text-color);
+}
 
-  input[type="submit"] {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 30px;
-    width: 130px;
-    height: 50px;
-    font-size: 15px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-    margin: auto;
-  }
+input[type="submit"] {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 30px;
+  width: 130px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
+}
 
-  input[type="submit"]:hover {
-    transform: scale(1.05);
-  }
+input[type="submit"]:hover {
+  transform: scale(1.05);
+}
 
-  input[type="submit"]:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  }
+input[type="submit"]:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 @media (width >= 800px) {
-  .container {
-    textarea,
-    input:not([type="submit"]) {
-      width: 700px;
-    }
+  textarea,
+  input:not([type="submit"]) {
+    width: 700px;
   }
   form {
     gap: 40px;
@@ -78,10 +76,8 @@
 }
 
 @media (width >= 1400px) {
-  .container {
-    textarea,
-    input:not([type="submit"]) {
-      width: 980px;
-    }
+  textarea,
+  input:not([type="submit"]) {
+    width: 980px;
   }
 }
