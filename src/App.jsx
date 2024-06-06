@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./sections/Navbar/Navbar";
+// import Navbar from "./sections/Navbar/Navbar";
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
@@ -10,7 +10,7 @@ import Footer from "./sections/Footer/Footer";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <About />
       <Skills />
