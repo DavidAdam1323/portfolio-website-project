@@ -1,24 +1,40 @@
-import { Link } from "react-rounter-dom";
+// Navbar.jsx
 
-function Navbar() {
+import React, { useState } from "react";
+import styles from "./NavbarStyles.module.css";
+
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link>About</Link>
-        </li>
-        <li>
-          <Link>Experience</Link>
-        </li>
-        <li>
-          <Link>Project</Link>
-        </li>
-        <li>
-          <Link>Contact</Link>
-        </li>
-      </ul>
+    <nav className={styles.navbar}>
+      <div className={styles.container}>
+        <h1 className={styles.logo}>Your Name</h1>
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          <div className={styles.icon}></div>
+        </div>
+        <ul
+          className={
+            menuOpen ? `${styles.navLinks} ${styles.show}` : styles.navLinks
+          }
+        >
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
