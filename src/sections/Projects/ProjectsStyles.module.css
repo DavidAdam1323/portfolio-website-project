@@ -2,76 +2,76 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
 
-  .subTitle {
-    margin: 10px 10px;
-    font-weight: 100;
-    text-align: center;
-  }
+.subTitle {
+  margin: 10px 10px;
+  font-weight: 100;
+  text-align: center;
+}
 
-  img {
-    height: 200px;
-    max-width: 275px;
-    align-self: center;
-    border-radius: 20px;
-  }
+.container img {
+  height: 200px;
+  width: 275px;
+  align-self: center;
+  border-radius: 20px;
+}
 
-  a {
-    width: fit-content;
-    text-decoration: none;
-    color: #222;
-    transition: transform 200ms ease-in-out;
-  }
+.container a {
+  width: fit-content;
+  text-decoration: none;
+  color: #222;
+  transition: transform 200ms ease-in-out;
+}
 
-  a:hover {
-    transform: scale(1.05);
-  }
+.container a:hover {
+  transform: scale(1.05);
+}
 
-  h3 {
-    margin: 20px 20px;
-  }
+.container h3 {
+  margin: 20px 20px;
+}
 
-  .btnCardSection {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 20px 30px 20px;
-    gap: 20px;
-  }
+.btnCardSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px 30px 20px;
+  gap: 20px;
+}
 
-  .cardBtn {
-    background-color: var(--btn-color);
-    color: var(--btn-text-color);
-    border: none;
-    border-radius: 30px;
-    width: 130px;
-    height: 50px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-  }
+.cardBtn {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 30px;
+  width: 130px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
 
-  .cardBtn:hover {
-    transform: scale(1.05);
-  }
+.cardBtn:hover {
+  transform: scale(1.05);
+}
 
-  .cardBtn:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  }
+.cardBtn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .cardContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  .projectCard {
-    border: 1px solid rgb(163, 163, 163);
-    border-radius: 20px;
-    margin-bottom: 30px;
-  }
+.projectCard {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 .image {
@@ -81,7 +81,7 @@
   margin-top: 30px;
 }
 
-@media (width >= 800px) {
+@media (min-width: 800px) {
   .cardContainer {
     display: flex;
     flex-direction: row;
