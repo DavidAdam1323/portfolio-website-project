@@ -1,5 +1,3 @@
-// Navbar.jsx
-
 import React, { useState } from "react";
 import styles from "./NavbarStyles.module.css";
 
@@ -13,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <h1 className={styles.logo}>Your Name</h1>
+        <h1 className={styles.logo}>David.Dev</h1>
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <div className={styles.icon}></div>
         </div>
@@ -26,7 +24,10 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
