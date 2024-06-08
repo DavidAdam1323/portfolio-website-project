@@ -20,6 +20,7 @@
 .navLinks {
   list-style-type: none;
   display: flex;
+  gap: 30px;
 }
 
 .navLinks li {
