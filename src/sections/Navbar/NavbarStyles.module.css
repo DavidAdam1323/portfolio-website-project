@@ -1,3 +1,5 @@
+/* Navbar Section */
+
 .navbar {
   background-color: #333;
   color: #fff;
@@ -40,12 +42,10 @@
 }
 
 .navLinks a:hover {
-  color: #ffd700;
+  background-color: grey;
 }
 
-/* NavbarStyles.module.css */
-
-/* Other styles... */
+/* Hamburger menu */
 
 .menuIcon {
   display: none; /* Hide by default on larger screens */
