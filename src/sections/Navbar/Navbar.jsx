@@ -12,9 +12,9 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <h1 className={styles.logo}>David.Dev</h1>
-        <div className={styles.menuIcon} onClick={toggleMenu}>
+        {/* <div className={styles.menuIcon} onClick={toggleMenu}>
           <div className={styles.icon}></div>
-        </div>
+        </div> */}
         <ul
           className={
             menuOpen ? `${styles.navLinks} ${styles.show}` : styles.navLinks
