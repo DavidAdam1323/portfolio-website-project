@@ -1,6 +1,7 @@
 :root {
   --background-color: #eef2f5;
-  --btn-color: #0987f2;
+  /* --btn-color: #0987f2; */
+  --btn-color: #096386;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
   --text-color: #222;
@@ -11,10 +12,10 @@
 
 [data-theme="dark"] {
   --background-color: #222;
-  --btn-color: #fff;
+  --btn-color: #8bbccc;
   --btn-text-color: #222;
   --project-card-bg: #fff;
-  --text-color: #fff;
+  --text-color: #f2f2f2;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
   --nav-bar-color: #333;
