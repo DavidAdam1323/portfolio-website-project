@@ -1,11 +1,12 @@
 :root {
-  --background-color: #fff;
+  --background-color: #eef2f5;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --nav-bar-color: #096386;
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --nav-bar-color: #333;
 }
 
 body {
