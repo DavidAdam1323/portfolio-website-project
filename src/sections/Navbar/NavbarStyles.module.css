@@ -57,9 +57,10 @@
 
 /* Hamburger icon styling */
 .icon {
-  width: 30px;
-  height: 4px;
+  width: 33px;
+  height: 5px;
   background-color: #fff;
+  border-radius: 5px;
   margin: 6px 0;
   transition: background-color 0.3s ease;
 }
