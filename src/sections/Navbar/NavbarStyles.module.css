@@ -53,16 +53,35 @@
 .menuIcon {
   display: none; /* Hide by default on larger screens */
   cursor: pointer;
+  position: relative;
 }
 
 /* Hamburger icon styling */
 .icon {
-  width: 33px;
+  width: 35px;
   height: 5px;
   background-color: #fff;
   border-radius: 5px;
   margin: 6px 0;
   transition: background-color 0.3s ease;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.icon::before {
+  transform: translateY(10px);
+}
+
+.icon::after {
+  transform: translateY(-10px);
 }
 
 /* Rotate the hamburger icon when the menu is open */
