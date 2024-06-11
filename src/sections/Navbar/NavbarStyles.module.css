@@ -54,7 +54,6 @@
   display: none; /* Hide by default on larger screens */
   cursor: pointer;
   position: relative;
-  cursor: pointer;
 }
 
 /* Hamburger Menu styling */
@@ -64,7 +63,7 @@
   background-color: #fff;
   border-radius: 5px;
   margin: 6px 0;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease; /* Transition transform property */
 }
 
 .icon::before,
@@ -89,12 +88,12 @@
   background-color: transparent;
 }
 
-.menuIcon.active .line::after {
-  transform: rotate(45deg);
+.menuIcon.active .icon::after {
+  transform: rotate(45deg); /* Rotate lines when menu is active */
 }
 
-.menuIcon.active .line::before {
-  transform: rotate(-45deg);
+.menuIcon.active .icon::before {
+  transform: rotate(-45deg); /* Rotate lines when menu is active */
 }
 
 /* Show the navigation links when the menu is open */
