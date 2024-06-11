@@ -48,7 +48,7 @@
   background-color: grey;
 }
 
-/* Hamburger menu */
+/* Hamburger Menu */
 
 .menuIcon {
   display: none; /* Hide by default on larger screens */
@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-/* Hamburger icon styling */
+/* Hamburger Menu styling */
 .icon {
   width: 35px;
   height: 5px;
@@ -85,17 +85,16 @@
   transform: translateY(-10px);
 }
 
-/* Rotate the hamburger icon when the menu is open */
-.menuIcon.open .icon:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+.menuIcon.active .icon {
+  background-color: transparent;
 }
 
-.menuIcon.open .icon:nth-child(2) {
-  opacity: 0;
+.menuIcon.active .line::after {
+  transform: rotate(45deg);
 }
 
-.menuIcon.open .icon:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+.menuIcon.active .line::before {
+  transform: rotate(-45deg);
 }
 
 /* Show the navigation links when the menu is open */

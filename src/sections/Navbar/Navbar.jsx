@@ -4,6 +4,10 @@ import styles from "./NavbarStyles.module.css";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const classes = menuOpen
+    ? `${styles.menuIcon} ${styles.active}`
+    : styles.menuIcon;
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -12,7 +16,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <h1 className={styles.logo}>David.Dev</h1>
-        <div className={styles.menuIcon} onClick={toggleMenu}>
+        <div className={classes} onClick={toggleMenu}>
           <div className={styles.icon}></div>
         </div>
         <ul
