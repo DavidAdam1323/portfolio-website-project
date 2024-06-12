@@ -113,6 +113,7 @@
     width: 100%;
     background-color: #333;
     padding: 20px 0;
+    z-index: 1000; /* Add z-index to ensure it appears above other elements */
   }
 
   .navLinks.show li {
