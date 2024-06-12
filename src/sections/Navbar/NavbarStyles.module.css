@@ -18,6 +18,7 @@
 }
 
 .logo {
+  color: var(--background-color);
   font-size: 24px;
   margin: 0;
 }
