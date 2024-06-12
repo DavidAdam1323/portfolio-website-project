@@ -107,11 +107,12 @@
   .navLinks.show {
     display: flex;
     flex-direction: column;
+    text-align: center;
     position: absolute;
     top: 60px; /* Adjust as needed */
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--nav-bar-color);
     padding: 20px 0;
     z-index: 1000; /* Add z-index to ensure it appears above other elements */
   }
