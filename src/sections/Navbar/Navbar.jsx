@@ -19,26 +19,24 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.desktopNavBar}>
-        <h1 className={styles.navbarLogo}>David.Dev</h1>
-        <div className={styles.navbarContainer}>
-          <ul className={styles.navLinks}>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <h1 className={styles.logo}>David.Dev</h1>
+        <ul className={styles.navLinks}>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
       <nav className={styles.hamburgerNav}>
-        <h1 className={styles.navbarLogo}>David.Dev</h1>
+        <h1 className={styles.logo}>David.Dev</h1>
         <div className={styles.hamburgerMenu}>
           <div className={menuButtonClasses} onClick={toggleMenu}>
             <div className={styles.menuIcon}></div>

@@ -1,6 +1,15 @@
 /* Navbar Section */
 
+/* Desktop Nav Bar */
+.desktopNavBar,
+.navLinks {
+  display: flex;
+}
+
 .desktopNavBar {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
   width: 100%;
   background-color: var(--nav-bar-color);
   color: #fff;
@@ -17,16 +26,14 @@
   align-items: center;
 }
 
-.navbarLogo {
-  color: var(--background-color);
-  font-size: 24px;
-  margin: 0;
+.logo {
+  font-size: 2rem;
 }
 
 .navLinks {
+  gap: 2rem;
   list-style-type: none;
-  display: flex;
-  gap: 30px;
+  font-size: 1.5rem;
 }
 
 .navLinks li {
@@ -50,6 +57,14 @@
 }
 
 /* Hamburger Menu */
+.hamburgerNav {
+  display: none;
+}
+
+.hamburgerMenu {
+  position: relative;
+  display: inline-block;
+}
 
 .menuButton {
   display: none; /* Hide by default on larger screens */
