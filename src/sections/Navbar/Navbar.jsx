@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.desktopNavBar}>
-        <h1 className={styles.logo}>David.Dev</h1>
+        <h1 className={styles.logo}>D.Dev</h1>
         <ul className={styles.navLinks}>
           <li>
             <a href="#about">About</a>
@@ -35,19 +35,15 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <nav className={styles.hamburgerNav}>
-        <h1 className={styles.logo}>David.Dev</h1>
+      <nav className={styles.mobileNavBar}>
+        <h1 className={styles.logo}>D.Dev</h1>
         <div className={styles.hamburgerMenu}>
           <div className={menuButtonClasses} onClick={toggleMenu}>
             <div className={styles.menuIcon}></div>
           </div>
-          <ul
-            className={
-              isMenuOpen
-                ? `${styles.navLinks} ${styles.navLinksShow}`
-                : styles.navLinks
-            }
-          >
+        </div>
+        {isMenuOpen && (
+          <ul className={`${styles.navLinks} ${styles.navLinksShow}`}>
             <li>
               <a href="#about" onClick={handleLinkClick}>
                 About
@@ -69,7 +65,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-        </div>
+        )}
       </nav>
     </>
   );

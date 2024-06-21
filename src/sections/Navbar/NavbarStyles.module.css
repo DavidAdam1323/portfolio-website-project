@@ -7,26 +7,19 @@
 }
 
 .desktopNavBar {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 8vh;
   width: 100%;
   background-color: var(--nav-bar-color);
   color: #fff;
   position: absolute;
-}
-
-.navbarContainer {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  top: 0;
 }
 
 .logo {
   font-size: 2rem;
+  padding-left: 20px; /* Adjust padding as needed */
 }
 
 .navLinks {
@@ -55,9 +48,17 @@
   background-color: grey;
 }
 
-/* Hamburger Menu */
-.hamburgerNav {
+/* Mobile Nav Bar */
+.mobileNavBar {
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  padding: 0 20px;
 }
 
 .hamburgerMenu {
@@ -118,9 +119,11 @@
 
 @media (max-width: 800px) {
   .desktopNavBar {
-    display: flex;
-    align-items: center;
-    padding: 15px 10px;
+    display: none; /* Hide desktop nav on smaller screens */
+  }
+
+  .mobileNavBar {
+    display: flex; /* Show mobile nav on smaller screens */
   }
 
   .navLinks {
@@ -145,12 +148,12 @@
   }
 
   .menuButton {
-    display: block; /* Show the hamburger icon on smaller screens */
+    display: block;
     background-color: var(
       --nav-bar-color
     ); /* Add background color to make it look like a button */
     border: none;
-    padding: 10px;
+    padding: 15px 9px;
     border-radius: 5px; /* Add some border radius for a button-like appearance */
   }
 }
