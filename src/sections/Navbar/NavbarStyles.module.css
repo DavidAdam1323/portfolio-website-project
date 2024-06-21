@@ -55,6 +55,8 @@
   display: none; /* Hide by default on larger screens */
   cursor: pointer;
   position: relative;
+  background-color: red;
+  padding: 15px 10px;
 }
 
 /* Hamburger Menu styling */
@@ -119,6 +121,10 @@
 
   .navLinks.show li {
     margin: 10px 0;
+  }
+
+  .navbar {
+    /* display: none; */
   }
 
   .menuIcon {
