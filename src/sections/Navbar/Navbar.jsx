@@ -17,40 +17,55 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.desktopNavBar}>
+      <h1 className={styles.navbarLogo}>David.Dev</h1>
       <div className={styles.navbarContainer}>
-        <h1 className={styles.navbarLogo}>David.Dev</h1>
-        <div className={menuButtonClasses} onClick={toggleMenu}>
-          <div className={styles.menuIcon}></div>
-        </div>
-        <ul
-          className={
-            isMenuOpen
-              ? `${styles.navLinks} ${styles.navLinksShow}`
-              : styles.navLinks
-          }
-        >
+        <ul className={styles.navLinks}>
           <li>
-            <a href="#about" onClick={handleLinkClick}>
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#experience" onClick={handleLinkClick}>
-              Experience
-            </a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#projects" onClick={handleLinkClick}>
-              Projects
-            </a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact" onClick={handleLinkClick}>
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
+      </div>
+      <div className={menuButtonClasses} onClick={toggleMenu}>
+        <div className={styles.menuIcon}>
+          <ul
+            className={
+              isMenuOpen
+                ? `${styles.navLinks} ${styles.navLinksShow}`
+                : styles.navLinks
+            }
+          >
+            <li>
+              <a href="#about" onClick={handleLinkClick}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#experience" onClick={handleLinkClick}>
+                Experience
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={handleLinkClick}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={handleLinkClick}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

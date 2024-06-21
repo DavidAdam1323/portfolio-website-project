@@ -1,6 +1,6 @@
 /* Navbar Section */
 
-.navbar {
+.desktopNavBar {
   width: 100%;
   background-color: var(--nav-bar-color);
   color: #fff;
@@ -56,6 +56,8 @@
   cursor: pointer;
   position: relative;
   padding: 15px 10px;
+  background: transparent;
+  border: none;
 }
 
 .menuIcon {
@@ -124,5 +126,11 @@
 
   .menuButton {
     display: block; /* Show the hamburger icon on smaller screens */
+    background-color: var(
+      --nav-bar-color
+    ); /* Add background color to make it look like a button */
+    border: none;
+    padding: 10px;
+    border-radius: 5px; /* Add some border radius for a button-like appearance */
   }
 }
