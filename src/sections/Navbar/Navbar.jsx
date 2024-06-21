@@ -2,30 +2,32 @@ import { useState } from "react";
 import styles from "./NavbarStyles.module.css";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const classes = menuOpen
-    ? `${styles.menuIcon} ${styles.active}`
-    : styles.menuIcon;
+  const menuButtonClasses = isMenuOpen
+    ? `${styles.menuButton} ${styles.menuButtonActive}`
+    : styles.menuButton;
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLinkClick = () => {
-    setMenuOpen(false);
+    setIsMenuOpen(false);
   };
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.container}>
-        <h1 className={styles.logo}>David.Dev</h1>
-        <div className={classes} onClick={toggleMenu}>
-          <div className={styles.icon}></div>
+      <div className={styles.navbarContainer}>
+        <h1 className={styles.navbarLogo}>David.Dev</h1>
+        <div className={menuButtonClasses} onClick={toggleMenu}>
+          <div className={styles.menuIcon}></div>
         </div>
         <ul
           className={
-            menuOpen ? `${styles.navLinks} ${styles.show}` : styles.navLinks
+            isMenuOpen
+              ? `${styles.navLinks} ${styles.navLinksShow}`
+              : styles.navLinks
           }
         >
           <li>

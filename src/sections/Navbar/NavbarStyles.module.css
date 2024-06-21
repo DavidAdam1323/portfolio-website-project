@@ -8,7 +8,7 @@
   position: absolute;
 }
 
-.container {
+.navbarContainer {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.logo {
+.navbarLogo {
   color: var(--background-color);
   font-size: 24px;
   margin: 0;
@@ -51,16 +51,14 @@
 
 /* Hamburger Menu */
 
-.menuIcon {
+.menuButton {
   display: none; /* Hide by default on larger screens */
   cursor: pointer;
   position: relative;
-  background-color: red;
   padding: 15px 10px;
 }
 
-/* Hamburger Menu styling */
-.icon {
+.menuIcon {
   width: 35px;
   height: 5px;
   background-color: var(--btn-text-color);
@@ -69,8 +67,8 @@
   transition: all 400ms ease-in-out;
 }
 
-.icon::before,
-.icon::after {
+.menuIcon::before,
+.menuIcon::after {
   content: "";
   position: absolute;
   width: 35px;
@@ -80,33 +78,34 @@
   transition: transform 400ms ease-in-out;
 }
 
-.icon::before {
+.menuIcon::before {
   transform: translateY(10px);
 }
 
-.icon::after {
+.menuIcon::after {
   transform: translateY(-10px);
 }
 
-.menuIcon.active .icon {
+.menuButtonActive .menuIcon {
   background-color: transparent;
 }
 
-.menuIcon.active .icon::after {
+.menuButtonActive .menuIcon::after {
   transform: rotate(45deg); /* Rotate lines when menu is active */
 }
 
-.menuIcon.active .icon::before {
+.menuButtonActive .menuIcon::before {
   transform: rotate(-45deg); /* Rotate lines when menu is active */
 }
 
-/* Show the navigation links when the menu is open */
+/* Responsive Styles */
+
 @media (max-width: 800px) {
   .navLinks {
-    display: none;
+    display: none; /* Hide links by default on smaller screens */
   }
 
-  .navLinks.show {
+  .navLinksShow {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -116,18 +115,14 @@
     width: 100%;
     background-color: var(--nav-bar-color);
     padding: 20px 0;
-    z-index: 1000; /* Add z-index to ensure it appears above other elements */
+    z-index: 1000; /* Ensure it appears above other elements */
   }
 
-  .navLinks.show li {
+  .navLinksShow li {
     margin: 10px 0;
   }
 
-  .navbar {
-    /* display: none; */
-  }
-
-  .menuIcon {
+  .menuButton {
     display: block; /* Show the hamburger icon on smaller screens */
   }
 }
