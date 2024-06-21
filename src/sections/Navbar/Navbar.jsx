@@ -17,26 +17,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.desktopNavBar}>
-      <h1 className={styles.navbarLogo}>David.Dev</h1>
-      <div className={styles.navbarContainer}>
-        <ul className={styles.navLinks}>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div className={menuButtonClasses} onClick={toggleMenu}>
-        <div className={styles.menuIcon}>
+    <>
+      <nav className={styles.desktopNavBar}>
+        <h1 className={styles.navbarLogo}>David.Dev</h1>
+        <div className={styles.navbarContainer}>
+          <ul className={styles.navLinks}>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav className={styles.hamburgerNav}>
+        <h1 className={styles.navbarLogo}>David.Dev</h1>
+        <div className={styles.hamburgerMenu}>
+          <div className={menuButtonClasses} onClick={toggleMenu}>
+            <div className={styles.menuIcon}></div>
+          </div>
           <ul
             className={
               isMenuOpen
@@ -66,8 +72,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

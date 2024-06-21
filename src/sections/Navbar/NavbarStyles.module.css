@@ -103,6 +103,12 @@
 /* Responsive Styles */
 
 @media (max-width: 800px) {
+  .desktopNavBar {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+  }
+
   .navLinks {
     display: none; /* Hide links by default on smaller screens */
   }
