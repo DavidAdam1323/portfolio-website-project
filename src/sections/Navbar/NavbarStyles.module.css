@@ -9,11 +9,10 @@
 .desktopNavBar {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 8vh;
   width: 100%;
   background-color: var(--nav-bar-color);
   color: #fff;
-  padding: 20px 0;
   position: absolute;
 }
 
