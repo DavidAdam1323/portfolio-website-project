@@ -1,5 +1,8 @@
 import { useState } from "react";
 import styles from "./NavbarStyles.module.css";
+// import logo from "../../assets/DAS.Dev-logo1.svg";
+
+import Logo from "../../assets/DAS.Dev-logo1.svg"; // Notice the capital L in Logo
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +22,10 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.desktopNavBar}>
-        <h1 className={styles.logo}>D.Dev</h1>
+        {/* <Logo className={styles.logo} /> */}
+        <div>
+          <img className={styles.logo} src={Logo} alt="DAS.Dev" />
+        </div>
         <ul className={styles.navLinks}>
           <li>
             <a href="#about">About</a>

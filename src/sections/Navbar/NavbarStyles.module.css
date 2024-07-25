@@ -18,8 +18,10 @@
 }
 
 .logo {
-  font-size: 2rem;
-  padding-left: 20px; /* Adjust padding as needed */
+  /* font-size: 2rem;
+  padding-left: 20px; Adjust padding as needed */
+  width: 30px;
+  height: 30px;
 }
 
 .navLinks {
